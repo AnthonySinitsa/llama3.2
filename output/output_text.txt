@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+<|image|>Given this image, output the information you see into a json format please<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Here is the information from the image in JSON format:
+
+**Business Hours**
+
+{
+  "Monday": "11:00AM - 9:00PM",
+  "Tuesday": "11:00AM - 9:00PM",
+  "Wednesday": "11:00AM - 9:00PM",
+  "Thursday": "11:00AM - 9:00PM",
+  "Friday": "11:00AM - 9:00PM",
+  "Saturday": "12:00PM - 9:00PM",
+  "Sunday": "CLOSED"
+}<|eot_id|>

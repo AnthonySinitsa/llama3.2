@@ -1,5 +1,6 @@
 import time
 import torch
+import json
 from PIL import Image
 from transformers import MllamaForConditionalGeneration, AutoProcessor
 
@@ -9,10 +10,13 @@ def measure_time(func):
         start_time = time.time()
         result = func(*args, **kwargs)
         end_time = time.time()
-        elapsed_time = end_time - start_time
-        with open("time_log.txt", "a") as log_file:
-            log_file.write(f"{func.__name__} elapsed time: {elapsed_time:.2f} seconds\n")
-        print(f"{func.__name__} elapsed time: {elapsed_time:.2f} seconds")
+        elapsed_time_seconds = end_time - start_time
+        elapsed_time_minutes = elapsed_time_seconds / 60
+        with open("output/time/time_log.txt", "a") as log_file:
+            log_file.write(f"{func.__name__} elapsed time: {elapsed_time_seconds:.2f} seconds "
+                           f"({elapsed_time_minutes:.2f} minutes)\n")
+        print(f"{func.__name__} elapsed time: {elapsed_time_seconds:.2f} seconds "
+              f"({elapsed_time_minutes:.2f} minutes)")
         return result
     return wrapper
 
@@ -31,7 +35,7 @@ def process_image():
     processor = AutoProcessor.from_pretrained(model_id)
     
     # Load and process the image
-    url = "images/KaysHours.jpg"
+    url = "images/KaysHours3.jpg"
     image = Image.open(url)
     
     messages = [
@@ -50,7 +54,24 @@ def process_image():
     
     # Generate output and decode
     output = model.generate(**inputs, max_new_tokens=2000)
-    print(processor.decode(output[0]))
+    output_text = processor.decode(output[0])
+
+    # Save output to a .txt file
+    with open("output/output_text.txt", "w") as text_file:
+        text_file.write(output_text)
+    
+    # Save output to a .json file
+    try:
+        # Attempt to parse the output as JSON
+        output_json = json.loads(output_text)
+    except json.JSONDecodeError:
+        # If output is not valid JSON, save as plain text in JSON format
+        output_json = {"response": output_text}
+    
+    with open("output/json/output_data.json", "w") as json_file:
+        json.dump(output_json, json_file, indent=4)
+    
+    print("Output saved to output_text.txt and output_data.json")
 
 # Entry point
 if __name__ == "__main__":
