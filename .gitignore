@@ -1,0 +1,12 @@
+# Model files
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Cache and environment
+__pycache__/
+*.py[cod]
+.env
+env1/
+.vscode/

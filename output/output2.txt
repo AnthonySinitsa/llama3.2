@@ -1,0 +1,98 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+<|image|>Given this image, output the information you see into a json format please<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Sure, here is the information from the image in a JSON format:
+
+$11.00 Lunch Special (11:00AM - 3:00PM)
+{
+    "Egg Flower Soup, 2 Gyoza, & Steamed or Fried Rice": {
+        "Chicken": "$14.00",
+        "Beef": "$16.00",
+        "Chicken & Beef": "$17.00",
+        "Spicy Chicken": "$16.00",
+        "Shrimp": "$17.00",
+        "Chicken & Shrimp": "$18.00",
+        "Beef & Shrimp": "$16.00",
+        "Chicken & Gyoza": "$15.00",
+        "Chicken Katsu": "$15.00",
+        "Extra Meat": "$5.00"
+    }
+}
+
+$15.00 Lunch Combos (11:00AM - 3:00PM)
+{
+    "Egg Flower Soup, 2 Gyoza, & Steamed or Fried Rice": {
+        "Mongolian Beef / Teriyaki Chicken": "$18.00",
+        "Mongolian Beef / Teriyaki Chicken Kung Pao Chicken / Teriyaki Chicken": "$18.00",
+        "Sesame Chicken / Teriyaki Chicken": "$16.00",
+        "Sesame Chicken / Sweet & Sour Chicken": "$14.00",
+        "Sweet & Sour Chicken / Teriyaki Chicken": "$15.00",
+        "Breaded Almond Chicken / Teriyaki Chicken": "$16.00"
+    }
+}
+
+Appetizer
+{
+    "Egg Rolls (1 pcs)": "$2.50",
+    "Gyoza (5 pcs)": "$4.00",
+    "Shrimp Tempura (3 pcs)": "$6.00",
+    "Cream Cheese Wonton (4 pcs)": "$4.00",
+    "BBQ Pork": "$11.00",
+    "Combo Plate": "$16.00"
+}
+
+Salads
+{
+    "Chicken Salad (sm)": "$6.00",
+    "House Salad (sm)": "$5.00",
+    "Lg": "$12.00",
+    "Lg": "$10.00"
+}
+
+Soup
+{
+    "Egg Flower Soup (sm)": "$5.00",
+    "Hot & Sour Soup": "$11.00",
+    "Gyoza Soup": "$12.00"
+}
+
+Sides
+{
+    "Steamed Rice (sm)": "$4.00",
+    "Kimchi": "$6.00"
+}
+
+Teriyaki
+{
+    "Includes Egg Flower Soup, Salad, & Steamed or Fried Rice": {
+        "Chicken": "$14.00",
+        "Beef": "$16.00",
+        "Chicken & Beef": "$17.00",
+        "Spicy Chicken": "$16.00",
+        "Shrimp": "$17.00",
+        "Chicken & Shrimp": "$18.00",
+        "Beef & Shrimp": "$16.00",
+        "Chicken & Gyoza": "$15.00",
+        "Chicken Katsu": "$15.00",
+        "Extra Meat": "$5.00"
+    }
+}
+
+Pad Thai / Yakisoba Noodles
+{
+    "Tofu": "$15.00",
+    "Vegetable": "$14.00",
+    "Chicken": "$14.00",
+    "Beef": "$15.00",
+    "Shrimp": "$16.00",
+    "House": "$18.00"
+}
+
+Udon Noodles
+{
+    "Chicken": "$13.00",
+    "Beef": "$14.00",
+    "Shrimp": "$15.00",
+    "House": "$16.00"
+}<|eot_id|>

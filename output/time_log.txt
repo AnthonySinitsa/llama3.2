@@ -1,0 +1,1 @@
+process_image elapsed time: 909.46 seconds
