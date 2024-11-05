@@ -1,8 +1,31 @@
+from PIL import Image
 import time
 import torch
-import json
-from PIL import Image
+import logging
+from datetime import datetime
 from transformers import MllamaForConditionalGeneration, AutoProcessor
+
+# Configure processing logging
+logging.basicConfig(
+    filename='output/time/processing.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
+
+# Configure output logging
+output_logger = logging.getLogger('output_logger')
+output_logger.setLevel(logging.INFO)
+# Prevent output logger from using the basic config
+output_logger.propagate = False
+# Create file handler for output logging
+output_handler = logging.FileHandler('output/output.log')
+output_handler.setFormatter(logging.Formatter('%(asctime)s\n%(message)s\n%(separator)s\n', 
+                                            datefmt='%Y-%m-%d %H:%M:%S'))
+output_logger.addHandler(output_handler)
+
+
+
 
 # Decorator to measure and log execution time
 def measure_time(func):
@@ -12,13 +35,60 @@ def measure_time(func):
         end_time = time.time()
         elapsed_time_seconds = end_time - start_time
         elapsed_time_minutes = elapsed_time_seconds / 60
-        with open("output/time/time_log.txt", "a") as log_file:
-            log_file.write(f"{func.__name__} elapsed time: {elapsed_time_seconds:.2f} seconds "
-                           f"({elapsed_time_minutes:.2f} minutes)\n")
-        print(f"{func.__name__} elapsed time: {elapsed_time_seconds:.2f} seconds "
-              f"({elapsed_time_minutes:.2f} minutes)")
+        
+        # Get the image details from the global variables
+        image_info = getattr(wrapper, 'image_info', {})
+        
+        # Create log message with image details
+        log_message = (
+            f"\nFunction: {func.__name__}\n"
+            f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+            f"Image Name: {image_info.get('image_name', 'N/A')}\n"
+            f"Resized Image: {image_info.get('resized_image_name', 'N/A')}\n"
+            f"Original Resolution: {image_info.get('original_resolution', 'N/A')}\n"
+            f"Resized Resolution: {image_info.get('resized_resolution', 'N/A')}\n"
+            f"Execution Time: {elapsed_time_seconds:.2f} seconds ({elapsed_time_minutes:.2f} minutes)\n"
+            f"{'-'*50}"
+        )
+        
+        # Log to file
+        logging.info(log_message)
+        
+        # Print to console
+        print(log_message)
         return result
     return wrapper
+
+
+
+
+
+# Function to reduce image resolution by 20%
+def resize_image(image_path, output_path):
+    image = Image.open(image_path)
+    original_resolution = f"{image.width}x{image.height}"
+    new_width = int(image.width * 0.06)
+    new_height = int(image.height * 0.06)
+    resized_image = image.resize((new_width, new_height))
+    resized_image.save(output_path)
+    
+    # Store image information
+    image_info = {
+        'image_name': image_path.split('/')[-1],
+        'resized_image_name': output_path.split('/')[-1],
+        'original_resolution': original_resolution,
+        'resized_resolution': f"{new_width}x{new_height}"
+    }
+    
+    # Attach image info to the wrapper function
+    process_image.image_info = image_info
+    
+    print(f"Image resized to {new_width}x{new_height} and saved as {output_path}")
+    return output_path
+
+
+
+
 
 @measure_time
 def process_image():
@@ -34,9 +104,13 @@ def process_image():
     )
     processor = AutoProcessor.from_pretrained(model_id)
     
-    # Load and process the image
-    url = "images/KaysHours3.jpg"
-    image = Image.open(url)
+    # Resize image before processing
+    input_image_path = "images/KaysHours2.jpg"
+    resized_image_path = "images/resized/KaysHours2_resized6%.jpg"
+    resized_image_path = resize_image(input_image_path, resized_image_path)
+    
+    # Load and process the resized image
+    image = Image.open(resized_image_path)
     
     messages = [
         {"role": "user", "content": [
@@ -60,18 +134,22 @@ def process_image():
     with open("output/output_text.txt", "w") as text_file:
         text_file.write(output_text)
     
-    # Save output to a .json file
-    try:
-        # Attempt to parse the output as JSON
-        output_json = json.loads(output_text)
-    except json.JSONDecodeError:
-        # If output is not valid JSON, save as plain text in JSON format
-        output_json = {"response": output_text}
+    # Log output with metadata to output.log
+    image_info = getattr(process_image, 'image_info', {})
+    output_log_message = (
+        f"Image Name: {image_info.get('image_name', 'N/A')}\n"
+        f"Resized Image: {image_info.get('resized_image_name', 'N/A')}\n"
+        f"Original Resolution: {image_info.get('original_resolution', 'N/A')}\n"
+        f"Resized Resolution: {image_info.get('resized_resolution', 'N/A')}\n"
+        f"Model Output:\n{output_text}"
+    )
+    output_logger.info(output_log_message, extra={'separator': '-'*50})
     
-    with open("output/json/output_data.json", "w") as json_file:
-        json.dump(output_json, json_file, indent=4)
-    
-    print("Output saved to output_text.txt and output_data.json")
+    print("Output saved to output_text.txt and output.log")
+
+
+
+
 
 # Entry point
 if __name__ == "__main__":

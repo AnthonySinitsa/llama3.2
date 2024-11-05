@@ -1,6 +1,0 @@
-process_image elapsed time: 909.46 seconds
-process_image elapsed time: 331.98 seconds (5.53 minutes)
-process_image elapsed time: 321.76 seconds (5.36 minutes)
-process_image elapsed time: 308.25 seconds (5.14 minutes)
-process_image elapsed time: 783.28 seconds (13.05 minutes)
-process_image elapsed time: 498.71 seconds (8.31 minutes)

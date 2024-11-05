@@ -4,37 +4,16 @@
 
 Here is the information from the image in a JSON format:
 
-```json
 {
-  "Business Hours": [
-    {
-      "Day": "Monday",
-      "Hours": "11:00AM - 9:00PM"
-    },
-    {
-      "Day": "Tuesday",
-      "Hours": "11:00AM - 9:00PM"
-    },
-    {
-      "Day": "Wednesday",
-      "Hours": "11:00AM - 9:00PM"
-    },
-    {
-      "Day": "Thursday",
-      "Hours": "11:00AM - 9:00PM"
-    },
-    {
-      "Day": "Friday",
-      "Hours": "11:00AM - 9:00PM"
-    },
-    {
-      "Day": "Saturday",
-      "Hours": "12:00PM - 9:00PM"
-    },
-    {
-      "Day": "Sunday",
-      "Hours": "CLOSED"
+    "Restaurant Hours": {
+        "Monday - Friday": {
+            "11:00 AM - 8:00 PM"
+        },
+        "Saturday": {
+            "11:00 AM - 8:00 PM"
+        },
+        "Sunday": {
+            "11:00 AM - 8:00 PM"
+        }
     }
-  ]
-}
-```<|eot_id|>
+}<|eot_id|>
