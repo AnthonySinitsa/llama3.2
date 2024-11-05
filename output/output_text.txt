@@ -2,16 +2,39 @@
 
 <|image|>Given this image, output the information you see into a json format please<|eot_id|><|start_header_id|>assistant<|end_header_id|>
 
-Here is the information from the image in JSON format:
+Here is the information from the image in a JSON format:
 
-**Business Hours**
-
+```json
 {
-  "Monday": "11:00AM - 9:00PM",
-  "Tuesday": "11:00AM - 9:00PM",
-  "Wednesday": "11:00AM - 9:00PM",
-  "Thursday": "11:00AM - 9:00PM",
-  "Friday": "11:00AM - 9:00PM",
-  "Saturday": "12:00PM - 9:00PM",
-  "Sunday": "CLOSED"
-}<|eot_id|>
+  "Business Hours": [
+    {
+      "Day": "Monday",
+      "Hours": "11:00AM - 9:00PM"
+    },
+    {
+      "Day": "Tuesday",
+      "Hours": "11:00AM - 9:00PM"
+    },
+    {
+      "Day": "Wednesday",
+      "Hours": "11:00AM - 9:00PM"
+    },
+    {
+      "Day": "Thursday",
+      "Hours": "11:00AM - 9:00PM"
+    },
+    {
+      "Day": "Friday",
+      "Hours": "11:00AM - 9:00PM"
+    },
+    {
+      "Day": "Saturday",
+      "Hours": "12:00PM - 9:00PM"
+    },
+    {
+      "Day": "Sunday",
+      "Hours": "CLOSED"
+    }
+  ]
+}
+```<|eot_id|>

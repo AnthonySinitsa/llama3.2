@@ -1,0 +1,16 @@
+2024-11-04 17:39:19 - INFO - 
+Function: process_image
+Timestamp: 2024-11-04 17:39:19
+Image Name: KaysHours3.jpg
+Original Resolution: 1590x1543
+Resized Resolution: 318x308
+Execution Time: 370.35 seconds (6.17 minutes)
+--------------------------------------------------
+2024-11-04 17:49:23 - INFO - 
+Function: process_image
+Timestamp: 2024-11-04 17:49:23
+Image Name: KaysHours3.jpg
+Original Resolution: 1590x1543
+Resized Resolution: 318x308
+Execution Time: 518.53 seconds (8.64 minutes)
+--------------------------------------------------
