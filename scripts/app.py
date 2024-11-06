@@ -67,8 +67,8 @@ def measure_time(func):
 def resize_image(image_path, output_path):
     image = Image.open(image_path)
     original_resolution = f"{image.width}x{image.height}"
-    new_width = int(image.width * 0.06)
-    new_height = int(image.height * 0.06)
+    new_width = int(image.width * 0.08)
+    new_height = int(image.height * 0.08)
     resized_image = image.resize((new_width, new_height))
     resized_image.save(output_path)
     
@@ -105,8 +105,8 @@ def process_image():
     processor = AutoProcessor.from_pretrained(model_id)
     
     # Resize image before processing
-    input_image_path = "images/KaysHours2.jpg"
-    resized_image_path = "images/resized/KaysHours2_resized6%.jpg"
+    input_image_path = "images/KaysMenu.jpg"
+    resized_image_path = "images/resized/KaysMenu_Resized_to_8.jpg"
     resized_image_path = resize_image(input_image_path, resized_image_path)
     
     # Load and process the resized image

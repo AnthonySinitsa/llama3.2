@@ -194,3 +194,687 @@ Here is the information from the image in a JSON format:
 }<|eot_id|>
 --------------------------------------------------
 
+2024-11-05 15:56:37
+Image Name: KaysMenu.jpg
+Resized Image: KaysMenu_Resized_to_80.jpg
+Original Resolution: 3000x4000
+Resized Resolution: 2400x3200
+Model Output:
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+<|image|>Given this image, output the information you see into a json format please<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Sure, here is the information from the image in a JSON format:
+
+{
+    "Appetizer": {
+        "Egg Rolls (1 pcs)": "$2.50",
+        "Gyoza (5 pcs)": "$4.00",
+        "Shrimp Tempura (3 pcs)": "$6.00",
+        "Cream Cheese Wonton (4 pcs)": "$4.00",
+        "BBQ Pork": "$11.00",
+        "Combo Plate": "$16.00"
+    },
+    "Salads": {
+        "Chicken Salad (sm)": "$6.00",
+        "House Salad (sm)": "$5.00",
+        "Gyoza Soup": "$12.00"
+    },
+    "Soup": {
+        "Egg Flower Soup (sm)": "$5.00",
+        "Hot & Sour Soup": "$11.00",
+        "Gyoza Soup": "$12.00"
+    },
+    "Sides": {
+        "Steamed Rice (sm)": "$6.00",
+        "Kimchi": "$8.00"
+    },
+    "Teriyaki": {
+        "Includes Egg Flower Soup, Salad, & Steamed or Fried Rice": {
+            "Chicken": "$14.00",
+            "Beef": "$16.00",
+            "Spicy Chicken": "$16.00",
+            "Shrimp": "$17.00",
+            "Chicken & Shrimp": "$18.00",
+            "Beef & Shrimp": "$16.00",
+            "Chicken Katsu": "$15.00",
+            "Extra Meat": "$5.00"
+        },
+        "Pad Thai / Yakisoba Noodles": {
+            "Tofu": "$15.00",
+            "Vegetable": "$14.00",
+            "Chicken": "$14.00",
+            "Beef": "$15.00",
+            "Shrimp": "$16.00",
+            "House": "$18.00"
+        },
+        "Udon Noodles": {
+            "Chicken": "$13.00",
+            "Beef": "$14.00",
+            "Shrimp": "$15.00",
+            "House": "$16.00"
+        }
+    },
+    "Lunch Special (11:00AM - 3:00PM)": {
+        "Includes Egg Flower Soup, 2 Gyoza, & Steamed or Fried Rice": {
+            "Teriyaki Chicken": "$12.00",
+            "Mongolian Beef": "$8.00",
+            "Broccoli Beef": "$8.00",
+            "Sweet & Sour Chicken": "$8.00",
+            "Sesame Chicken": "$11.00",
+            "Breaded Almond Chicken": "$12.00",
+            "Kung Pao Chicken": "$12.00",
+            "Orange Chicken": "$10.00",
+            "Honey Walnut Chicken": "$10.00",
+            "Veggie Deluxe": "$10.00"
+        }
+    },
+    "$15.00 Lunch Combos (11:00AM - 3:00PM)": {
+        "Includes Egg Flower Soup, 2 Gyoza, & Steamed or Fried Rice": {
+            "Mongolian Beef / Teriyaki Chicken": "$10.00",
+            "Mongolian Beef / Teriyaki Chicken": "$10.00",
+            "Kung Pao Chicken / Teriyaki Chicken": "$12.00",
+            "Sesame Chicken / Teriyaki Chicken": "$12.00",
+            "Sesame Chicken / Sweet & Sour Chicken": "$12.00",
+            "Sweet & Sour Chicken / Teriyaki Chicken": "$12.00",
+            "Breaded Almond Chicken / Teriyaki Chicken": "$12.00"
+        }
+    }
+}<|eot_id|>
+--------------------------------------------------
+
+2024-11-05 16:23:42
+Image Name: KaysMenu.jpg
+Resized Image: KaysMenu_Resized_to_60.jpg
+Original Resolution: 3000x4000
+Resized Resolution: 1800x2400
+Model Output:
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+<|image|>Given this image, output the information you see into a json format please<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Sure, here is the information from the image in a JSON format:
+
+{
+    "Appetizer": {
+        "Egg Rolls (1 pcs)": "$2.50",
+        "Gyoza (5 pcs)": "$4.00",
+        "Shrimp Tempura (3 pcs)": "$6.00",
+        "Cream Cheese Wonton (4 pcs)": "$4.00",
+        "BBQ Pork": "$11.00",
+        "Combo Plate": "$16.00",
+        "2 pcs": "$5.00",
+        "10 pcs": "$8.00",
+        "6 pcs": "$12.00",
+        "8 pcs": "$8.00"
+    },
+    "Salads": {
+        "Chicken Salad (sm)": "$6.00",
+        "House Salad (sm)": "$5.00",
+        "Lg": "$12.00",
+        "Lg": "$10.00"
+    },
+    "Soup": {
+        "Egg Flower Soup (sm)": "$5.00",
+        "Hot & Sour Soup": "$11.00",
+        "Gyoza Soup": "$12.00",
+        "Lg": "$10.00"
+    },
+    "Sides": {
+        "Steamed Rice (sm)": "$4.00",
+        "Kimchi": "$6.00"
+    },
+    "Teriyaki": {
+        "Includes Egg Flower Soup, Salad, & Steamed or Fried Rice": {
+            "Chicken": "$14.00",
+            "Beef": "$16.00",
+            "Chicken & Beef": "$17.00",
+            "Spicy Chicken": "$16.00",
+            "Shrimp": "$17.00",
+            "Chicken & Shrimp": "$18.00",
+            "Beef & Shrimp": "$16.00",
+            "Chicken & Gyoza": "$15.00",
+            "Chicken Katsu": "$15.00",
+            "Extra Meat": "$5.00"
+        },
+        "Includes Egg Flower Soup, 2 Gyoza, & Steamed or Fried Rice": {
+            "Teriyaki Chicken": "$11.00",
+            "Mongolian Beef": "$8.00",
+            "Broccoli Beef": "$8.00",
+            "Sweet & Sour Chicken": "$8.00",
+            "Sesame Chicken": "$11.00",
+            "Breaded Almond Chicken": "$11.00",
+            "Kung Pao Chicken": "$12.00",
+            "Orange Chicken": "$12.00",
+            "Honey Walnut Chicken": "$10.00",
+            "Veggie Deluxe": "$10.00"
+        }
+    },
+    "Pad Thai / Yakisoba Noodles": {
+        "Tofu": "$15.00",
+        "Vegetable": "$14.00",
+        "Chicken": "$14.00",
+        "Beef": "$15.00",
+        "Shrimp": "$16.00",
+        "House": "$18.00"
+    },
+    "Udon Noodles": {
+        "Chicken": "$13.00",
+        "Beef": "$14.00",
+        "Shrimp": "$15.00",
+        "House": "$16.00"
+    },
+    "$15.00 Lunch Combos (11:00AM - 3:00PM)": {
+        "Includes Egg Flower Soup, 2 Gyoza, & Steamed or Fried Rice": {
+            "Mongolian Beef / Teriyaki Chicken": "$10.00",
+            "Mongolian Beef / Teriyaki Chicken": "$10.00",
+            "Kung Pao Chicken / Teriyaki Chicken": "$12.00",
+            "Sesame Chicken / Teriyaki Chicken": "$12.00",
+            "Sesame Chicken / Sweet & Sour Chicken": "$12.00",
+            "Sweet & Sour Chicken / Teriyaki Chicken": "$12.00",
+            "Breaded Almond Chicken / Teriyaki Chicken": "$12.00"
+        }
+    }
+}<|eot_id|>
+--------------------------------------------------
+
+2024-11-05 16:52:33
+Image Name: KaysMenu.jpg
+Resized Image: KaysMenu_Resized_to_40.jpg
+Original Resolution: 3000x4000
+Resized Resolution: 1200x1600
+Model Output:
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+<|image|>Given this image, output the information you see into a json format please<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Sure, here is the information from the image in a JSON format:
+
+{
+    "Appetizer": {
+        "Egg Rolls (1 pcs)": "$2.50",
+        "Gyoza (5 pcs)": "$4.00",
+        "Shrimp Tempura (3 pcs)": "$6.00",
+        "Cream Cheese Wonton (4 pcs)": "$4.00",
+        "BBQ Pork": "$11.00",
+        "Combo Plate": "$16.00"
+    },
+    "Salads": {
+        "Chicken Salad (sm)": "$6.00",
+        "House Salad (sm)": "$5.00",
+        "Chicken Salad (lg)": "$6.00",
+        "House Salad (lg)": "$5.00"
+    },
+    "Soup": {
+        "Egg Flower Soup (sm)": "$5.00",
+        "Hot & Sour Soup": "$11.00",
+        "Gyoza Soup": "$12.00"
+    },
+    "Sides": {
+        "Steamed Rice (sm)": "$4.00",
+        "Kimchi": "$6.00"
+    },
+    "Teriyaki": {
+        "Includes Egg Flower Soup, Salad, & Steamed or Fried Rice": {
+            "Chicken": "$14.00",
+            "Beef": "$16.00",
+            "Chicken & Beef": "$17.00",
+            "Spicy Chicken": "$16.00",
+            "Shrimp": "$17.00",
+            "Chicken & Shrimp": "$18.00",
+            "Beef & Shrimp": "$16.00",
+            "Chicken & Gyoza": "$15.00",
+            "Chicken Katsu": "$15.00",
+            "Extra Meat": "$5.00"
+        }
+    },
+    "Pad Thai / Yakisoba Noodles": {
+        "Tofu": "$15.00",
+        "Vegetable": "$14.00",
+        "Chicken": "$14.00",
+        "Beef": "$15.00",
+        "Shrimp": "$16.00",
+        "House": "$18.00"
+    },
+    "Udon Noodles": {
+        "Chicken": "$13.00",
+        "Beef": "$14.00",
+        "Shrimp": "$15.00",
+        "House": "$16.00"
+    },
+    "Lunch Special": {
+        "(11:00AM - 3:00PM)": {
+            "Includes Egg Flower Soup, 2 Gyoza, & Steamed or Fried Rice": {
+                "Teriyaki Chicken": "$8.00",
+                "Mongolian Beef": "$8.00",
+                "Broccoli Beef": "$8.00",
+                "Sweet & Sour Chicken": "$8.00",
+                "Sesame Chicken": "$8.00",
+                "Breaded Almond Chicken": "$8.00",
+                "Kung Pao Chicken": "$8.00",
+                "Orange Chicken": "$12.00",
+                "Honey Walnut Chicken": "$12.00",
+                "Veggie Deluxe": "$10.00"
+            }
+        }
+    },
+    "Lunch Combos": {
+        "(11:00AM - 3:00PM)": {
+            "Includes Egg Flower Soup, 2 Gyoza, & Steamed or Fried Rice": {
+                "Mongolian Beef / Teriyaki Chicken": "$10.00",
+                "Mongolian Beef / Teriyaki Chicken": "$10.00",
+                "Kung Pao Chicken / Teriyaki Chicken": "$10.00",
+                "Sesame Chicken / Teriyaki Chicken": "$10.00",
+                "Sweet & Sour Chicken / Teriyaki Chicken": "$10.00",
+                "Breaded Almond Chicken / Teriyaki Chicken": "$10.00"
+            }
+        }
+    }
+}<|eot_id|>
+--------------------------------------------------
+
+2024-11-05 17:18:43
+Image Name: KaysMenu.jpg
+Resized Image: KaysMenu_Resized_to_20.jpg
+Original Resolution: 3000x4000
+Resized Resolution: 600x800
+Model Output:
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+<|image|>Given this image, output the information you see into a json format please<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Sure, here is the information from the image in a JSON format:
+
+{
+    "Appetizer": {
+        "Egg Rolls (1 pc)": "$2.50",
+        "Gyoza (5 pcs)": "$4.00",
+        "Shrimp Tempura (3 pcs)": "$6.00",
+        "Cream Cheese Wonton (4 pcs)": "$8.00",
+        "BBQ Pork": "$11.00",
+        "Combo Plate": "$16.00"
+    },
+    "Salads": {
+        "Chicken Salad (sm)": "$6.00",
+        "House Salad (sm)": "$5.00",
+        "Lg": "$12.00",
+        "Lg": "$10.00"
+    },
+    "Soup": {
+        "Egg Flower Soup (sm)": "$5.00",
+        "Hot & Sour Soup": "$11.00",
+        "Gyosa Soup": "$12.00"
+    },
+    "Sides": {
+        "Steamed Rice (sm)": "$4.00",
+        "Kimchi": "$5.00"
+    },
+    "Teriyaki": {
+        "Includes Egg Flower Soup, Salad, & Steamed or Fried Rice": "$11.00",
+        "Chicken": "$16.00",
+        "Beef": "$17.00",
+        "Chicken & Beef": "$16.00",
+        "Spicy Chicken": "$16.00",
+        "Shrimp": "$17.00",
+        "Chicken & Shrimp": "$18.00",
+        "Beef & Shrimp": "$16.00",
+        "Chicken & Gyozo": "$15.00",
+        "Chicken Katsu": "$15.00",
+        "Extra Meat": "$5.00"
+    },
+    "Pad Thai / Yakisoba Noodles": {
+        "Tofu": "$15.00",
+        "Vegetable": "$14.00",
+        "Chicken": "$15.00",
+        "Beef": "$16.00",
+        "Shrimp": "$18.00",
+        "House": "$16.00"
+    },
+    "Udon Noodles": {
+        "Chicken": "$13.00",
+        "Beef": "$14.00",
+        "Shrimp": "$15.00",
+        "House": "$16.00"
+    },
+    "Lunch Special (11:00AM - 3:00PM)": {
+        "Includes Egg Flower Soup, 2 Gyoza, & Steamed or Fried Rice": "$11.00",
+        "Teriyaki Chicken": "$12.00",
+        "Mongolian Beef": "$12.00",
+        "Broccoli Beef": "$8.00",
+        "Sweet & Sour Chicken": "$8.00",
+        "Sesame Chicken": "$12.00",
+        "Breaded Almond Chicken": "$12.00",
+        "Kung Pao Chicken": "$10.00",
+        "Orange Chicken": "$10.00",
+        "Honey Walnut Chicken": "$10.00",
+        "Veggie Deluxe": "$10.00"
+    },
+    "Lunch Combos (11:00AM - 3:00PM)": {
+        "Includes Egg Flower Soup, 2 Gyoza, & Steamed or Fried Rice": "$15.00",
+        "Mongolian Beef/Teriyaki Chicken": "$10.00",
+        "Mongolian Beef/Teriyaki Chicken": "$10.00",
+        "Kung Pao Chicken/Teriyaki Chicken": "$12.00",
+        "Sesame Chicken/Teriyaki Chicken": "$12.00",
+        "Sesame Chicken/Sweet & Sour Chicken": "$12.00",
+        "Sweet & Sour Chicken/Teriyaki Chicken": "$12.00",
+        "Breaded Almond Chicken/Teriyaki Chicken": "$12.00"
+    }
+}<|eot_id|>
+--------------------------------------------------
+
+2024-11-05 18:05:07
+Image Name: KaysMenu.jpg
+Resized Image: KaysMenu_Resized_to_10.jpg
+Original Resolution: 3000x4000
+Resized Resolution: 300x400
+Model Output:
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+<|image|>Given this image, output the information you see into a json format please<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Here is the information from the image in a JSON format:
+
+```
+[
+  {
+    "name": "Appetizers",
+    "items": [
+      {
+        "name": "Pot Stickers",
+        "price": "$5.95"
+      },
+      {
+        "name": "Edamame",
+        "price": "$4.95"
+      },
+      {
+        "name": "Cucumber Salad",
+        "price": "$4.95"
+      },
+      {
+        "name": "Hot & Sour Soup",
+        "price": "$3.95"
+      },
+      {
+        "name": "Wonton Soup",
+        "price": "$3.95"
+      },
+      {
+        "name": "Egg Flower Soup",
+        "price": "$3.95"
+      },
+      {
+        "name": "Sesame Balls",
+        "price": "$5.95"
+      },
+      {
+        "name": "Steamed Dumplings",
+        "price": "$5.95"
+      },
+      {
+        "name": "Fried Wontons",
+        "price": "$5.95"
+      },
+      {
+        "name": "Fried Shrimp Balls",
+        "price": "$5.95"
+      }
+    ]
+  },
+  {
+    "name": "Sides",
+    "items": [
+      {
+        "name": "Fried Rice",
+        "price": "$3.95"
+      },
+      {
+        "name": "Lo Mein",
+        "price": "$4.95"
+      },
+      {
+        "name": "Egg Foo Young",
+        "price": "$5.95"
+      },
+      {
+        "name": "Breaded Chicken",
+        "price": "$5.95"
+      },
+      {
+        "name": "Breaded Shrimp",
+        "price": "$5.95"
+      },
+      {
+        "name": "Chicken Fingers",
+        "price": "$5.95"
+      },
+      {
+        "name": "Fried Chicken",
+        "price": "$5.95"
+      },
+      {
+        "name": "Fried Shrimp",
+        "price": "$5.95"
+      }
+    ]
+  },
+  {
+    "name": "Lunch Specials",
+    "items": [
+      {
+        "name": "Szechuan Beef",
+        "price": "$7.95"
+      },
+      {
+        "name": "Mongolian Beef",
+        "price": "$7.95"
+      },
+      {
+        "name": "Broccoli Beef",
+        "price": "$7.95"
+      },
+      {
+        "name": "Kung Pao Chicken",
+        "price": "$7.95"
+      },
+      {
+        "name": "Honey Walnut Chicken",
+        "price": "$7.95"
+      }
+    ]
+  },
+  {
+    "name": "Lunch Combos",
+    "items": [
+      {
+        "name": "Mongolian Beef / Spring Rolls",
+        "price": "$11.95"
+      },
+      {
+        "name": "Mongolian Beef / Dumplings",
+        "price": "$11.95"
+      },
+      {
+        "name": "Mongolian Beef / Egg Rolls",
+        "price": "$11.95"
+      },
+      {
+        "name": "Mongolian Beef / Pot Stickers",
+        "price": "$11.95"
+      },
+      {
+        "name": "Mongolian Beef / Fried Wontons",
+        "price": "$11.95"
+      },
+      {
+        "name": "Mongolian Beef / Fried Shrimp Balls",
+        "price": "$11.95"
+      }
+    ]
+  },
+  {
+    "name": "Urban Noodles",
+    "items": [
+      {
+        "name": "Chicken",
+        "price": "$11.95"
+      },
+      {
+        "name": "Beef",
+        "price": "$11.95"
+      },
+      {
+        "name": "Shrimp",
+        "price": "$11.95"
+      }
+    ]
+  }
+]
+```<|eot_id|>
+--------------------------------------------------
+
+2024-11-05 19:17:40
+Image Name: KaysMenu.jpg
+Resized Image: KaysMenu_Resized_to_8.jpg
+Original Resolution: 3000x4000
+Resized Resolution: 240x320
+Model Output:
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+<|image|>Given this image, output the information you see into a json format please<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Here is the information in the image in JSON format:
+
+```
+{
+    "Beverages": {
+        "Soda": {
+            "Coca-Cola": 1.00,
+            "Diet Coke": 1.00,
+            "Sprite": 1.00,
+            "Root Beer": 1.00,
+            "Fanta": 1.00,
+            "Ginger Ale": 1.00,
+            "Mountain Dew": 1.00,
+            "Dr. Pepper": 1.00,
+            "Pepsi": 1.00,
+            "Diet Pepsi": 1.00,
+            "Sierra Mist": 1.00,
+            "Tropicana Lemonade": 1.00,
+            "Tropicana Orangeade": 1.00,
+            "Tropicana Grapefruit": 1.00,
+            "Tropicana Fruit Punch": 1.00,
+            "Tropicana Strawberry": 1.00,
+            "Tropicana Pineapple": 1.00,
+            "Tropicana Mango": 1.00,
+            "Tropicana Peach": 1.00,
+            "Tropicana Berry": 1.00,
+            "Tropicana Green Tea": 1.00,
+            "Tropicana Iced Tea": 1.00,
+            "Tropicana Lemonade Iced Tea": 1.00,
+            "Tropicana Pink Lemonade": 1.00,
+            "Tropicana Orangeade Iced Tea": 1.00,
+            "Tropicana Fruit Punch Iced Tea": 1.00,
+            "Tropicana Strawberry Iced Tea": 1.00,
+            "Tropicana Pineapple Iced Tea": 1.00,
+            "Tropicana Mango Iced Tea": 1.00,
+            "Tropicana Peach Iced Tea": 1.00,
+            "Tropicana Berry Iced Tea": 1.00,
+            "Tropicana Green Tea Iced Tea": 1.00,
+            "Tropicana Iced Tea with Lemon": 1.00,
+            "Tropicana Iced Tea with Lime": 1.00,
+            "Tropicana Iced Tea with Peach": 1.00,
+            "Tropicana Iced Tea with Mango": 1.00,
+            "Tropicana Iced Tea with Pineapple": 1.00,
+            "Tropicana Iced Tea with Berry": 1.00,
+            "Tropicana Iced Tea with Green Tea": 1.00,
+            "Tropicana Iced Tea with Lemonade": 1.00,
+            "Tropicana Iced Tea with Orangeade": 1.00,
+            "Tropicana Iced Tea with Fruit Punch": 1.00,
+            "Tropicana Iced Tea with Strawberry": 1.00,
+            "Tropicana Iced Tea with Mango": 1.00,
+            "Tropicana Iced Tea with Pineapple": 1.00,
+            "Tropicana Iced Tea with Berry": 1.00,
+            "Tropicana Iced Tea with Green Tea": 1.00,
+            "Tropicana Iced Tea with Lemonade": 1.00,
+            "Tropicana Iced Tea with Orangeade": 1.00,
+            "Tropicana Iced Tea with Fruit Punch": 1.00,
+            "Tropicana Iced Tea with Strawberry": 1.00,
+            "Tropicana Iced Tea with Mango": 1.00,
+            "Tropicana Iced Tea with Pineapple": 1.00,
+            "Tropicana Iced Tea with Berry": 1.00,
+            "Tropicana Iced Tea with Green Tea": 1.00,
+            "Tropicana Iced Tea with Lemonade": 1.00,
+            "Tropicana Iced Tea with Orangeade": 1.00,
+            "Tropicana Iced Tea with Fruit Punch": 1.00,
+            "Tropicana Iced Tea with Strawberry": 1.00,
+            "Tropicana Iced Tea with Mango": 1.00,
+            "Tropicana Iced Tea with Pineapple": 1.00,
+            "Tropicana Iced Tea with Berry": 1.00,
+            "Tropicana Iced Tea with Green Tea": 1.00,
+            "Tropicana Iced Tea with Lemonade": 1.00,
+            "Tropicana Iced Tea with Orangeade": 1.00,
+            "Tropicana Iced Tea with Fruit Punch": 1.00,
+            "Tropicana Iced Tea with Strawberry": 1.00,
+            "Tropicana Iced Tea with Mango": 1.00,
+            "Tropicana Iced Tea with Pineapple": 1.00,
+            "Tropicana Iced Tea with Berry": 1.00,
+            "Tropicana Iced Tea with Green Tea": 1.00,
+            "Tropicana Iced Tea with Lemonade": 1.00,
+            "Tropicana Iced Tea with Orangeade": 1.00,
+            "Tropicana Iced Tea with Fruit Punch": 1.00,
+            "Tropicana Iced Tea with Strawberry": 1.00,
+            "Tropicana Iced Tea with Mango": 1.00,
+            "Tropicana Iced Tea with Pineapple": 1.00,
+            "Tropicana Iced Tea with Berry": 1.00,
+            "Tropicana Iced Tea with Green Tea": 1.00,
+            "Tropicana Iced Tea with Lemonade": 1.00,
+            "Tropicana Iced Tea with Orangeade": 1.00,
+            "Tropicana Iced Tea with Fruit Punch": 1.00,
+            "Tropicana Iced Tea with Strawberry": 1.00,
+            "Tropicana Iced Tea with Mango": 1.00,
+            "Tropicana Iced Tea with Pineapple": 1.00,
+            "Tropicana Iced Tea with Berry": 1.00,
+            "Tropicana Iced Tea with Green Tea": 1.00,
+            "Tropicana Iced Tea with Lemonade": 1.00,
+            "Tropicana Iced Tea with Orangeade": 1.00,
+            "Tropicana Iced Tea with Fruit Punch": 1.00,
+            "Tropicana Iced Tea with Strawberry": 1.00,
+            "Tropicana Iced Tea with Mango": 1.00,
+            "Tropicana Iced Tea with Pineapple": 1.00,
+            "Tropicana Iced Tea with Berry": 1.00,
+            "Tropicana Iced Tea with Green Tea": 1.00,
+            "Tropicana Iced Tea with Lemonade": 1.00,
+            "Tropicana Iced Tea with Orangeade": 1.00,
+            "Tropicana Iced Tea with Fruit Punch": 1.00,
+            "Tropicana Iced Tea with Strawberry": 1.00,
+            "Tropicana Iced Tea with Mango": 1.00,
+            "Tropicana Iced Tea with Pineapple": 1.00,
+            "Tropicana Iced Tea with Berry": 1.00,
+            "Tropicana Iced Tea with Green Tea": 1.00,
+            "Tropicana Iced Tea with Lemonade": 1.00,
+            "Tropicana Iced Tea with Orangeade": 1.00,
+            "Tropicana Iced Tea with Fruit Punch": 1.00,
+            "Tropicana Iced Tea with Strawberry": 1.00,
+            "Tropicana Iced Tea with Mango": 1.00,
+            "Tropicana Iced Tea with Pineapple": 1.00,
+            "Tropicana Iced Tea with Berry": 1.00,
+            "Tropicana Iced Tea with Green Tea": 1.00,
+            "Tropicana Iced Tea with Lemonade": 1.00,
+            "Tropicana Iced Tea with Orangeade": 1.00,
+            "Tropicana Iced Tea with Fruit Punch": 1.00,
+            "Tropicana Iced Tea with Strawberry": 1.00,
+            "Tropicana Iced Tea with Mango": 1.00,
+            "Tropicana Iced Tea with Pineapple": 1.00,
+            "Tropicana Iced Tea with Berry": 1.00,
+            "Tropicana Iced Tea with Green Tea": 1.00,
+            "Tropicana Iced Tea with Lemonade": 1.00,
+            "Tropicana Iced Tea with Orangeade": 1.00,
+            "Tropicana Iced Tea with Fruit Punch": 1.00,
+            "Tropicana Iced Tea with Strawberry": 1.00,
+            "Tropicana Iced Tea with Mango": 1.00,
+            "Tropicana Iced Tea with Pineapple": 1.00,
+            "Tropicana Iced Tea with Berry": 1.00,
+            "T
+--------------------------------------------------
+
